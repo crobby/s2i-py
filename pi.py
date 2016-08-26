@@ -13,6 +13,7 @@ def sample(p):
     return 1 if x*x + y*y < 1 else 0
 
 NUM_SAMPLES=int(sys.argv[1])
+print "Will be using %s as NUM_SAMPLES" % NUM_SAMPLES
 
 count = sc.parallelize(xrange(0, NUM_SAMPLES)).map(sample).reduce(lambda a, b: a + b)
 print "Pi is still approximately %f" % (4.0 * count / NUM_SAMPLES)
