@@ -1,3 +1,4 @@
+import random
 import sys
 from pyspark import SparkConf
 from pyspark import SparkContext
