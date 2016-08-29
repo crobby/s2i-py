@@ -1,6 +1,7 @@
 from random import random
 import sys
 from pyspark.sql import SparkSession
+from operator import add
 
 def sample(p):
     x, y = random(), random()
