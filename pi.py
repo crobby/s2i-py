@@ -10,7 +10,7 @@ sc = SparkContext(conf=conf)
 
 def sample(p):
     x, y = random(), random()
-    print ("returning %s, %s" % x, y)
+    print "returning %s, %s" % (x, y)
     return 1 if x*x + y*y < 1 else 0
 
 NUM_SAMPLES=int(sys.argv[1])
